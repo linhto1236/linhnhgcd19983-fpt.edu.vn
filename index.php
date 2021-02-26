@@ -1,1 +1,4 @@
-Hello computing class!
+<?php
+session_start();
+header("location:login.html");
+?>
