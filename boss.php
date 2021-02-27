@@ -8,7 +8,6 @@
   $dbconn = pg_connect($connection_string);
   $query = "select * product_ID, product_name, product_price from product ;";
   $result = pg_query($dbconn,$query);
-  $resultCheck = pg_num_rows($result);
 ?>
 
 <!DOCTYPE html>
