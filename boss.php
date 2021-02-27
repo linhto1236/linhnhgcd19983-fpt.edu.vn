@@ -32,7 +32,7 @@ $resultCheck = pg_num_rows($result);
   </div>
   <div class="container">
     <div class="col" style="padding-top:50px;">
-      <table id="view-data" class="table" width="100%" cellspacing="0">
+      <table>
         <thead>
           <tr>
             <th>#</th>
