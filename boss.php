@@ -1,9 +1,9 @@
 <?php
 $con = pg_connect("host=ec2-35-171-57-132.compute-1.amazonaws.com
-dbname=d3k3fb2lgurcfl
+dbname=d7sp2j6pm2qi2a
 port=5432
-user=dzexwmceyqyxoz
-password=2688fa41698d917203881a7a3afcbf3104436727c4927b77182edd12fc810cee
+user=uhccoenqxgimrq
+password=f212022ea21f05418f65b67a5e34e09742a957252985b3fbca8d0e90cd829840
 sslmode=require");
 
 $query = "select product_ID, product_name, product_price from product ;";
@@ -32,7 +32,6 @@ $resultCheck = pg_num_rows($result);
   </div>
   <div class="container">
     <div class="col" style="padding-top:50px;">
-      <table>
         <thead>
           <tr>
             <th>#</th>
