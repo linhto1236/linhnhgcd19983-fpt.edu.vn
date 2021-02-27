@@ -20,7 +20,7 @@ td{
 }
 
 table {
-    border-collapse: separate (default):
+    border-collapse: collapse;
     width: 100%;
     padding: 15px;
 }
