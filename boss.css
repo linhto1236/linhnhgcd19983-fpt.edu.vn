@@ -30,12 +30,16 @@ th{
     font-size: 20px;
     margin-bottom: 30px;
     border: 2px;
+    margin-right: auto;
+    margin-left: auto;
 }
 td{
     color: #383737;
     font-size: 20px;
     margin-bottom: 30px;
     border: 2px;
+    margin-right: auto;
+    margin-left: auto;
 }
 table {
     border: 2px;
