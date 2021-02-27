@@ -28,3 +28,8 @@ table {
 table, th, td {
 border: 1px solid black;
 }
+
+h3{
+    text-align: top, auto;
+}
+
