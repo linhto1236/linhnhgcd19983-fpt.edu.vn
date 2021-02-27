@@ -3,10 +3,9 @@ $con = pg_connect("host=ec2-35-171-57-132.compute-1.amazonaws.com
 dbname=d7sp2j6pm2qi2a
 port=5432
 user=uhccoenqxgimrq
-password=f212022ea21f05418f65b67a5e34e09742a957252985b3fbca8d0e90cd829840
-sslmode=require");
+password=f212022ea21f05418f65b67a5e34e09742a957252985b3fbca8d0e90cd829840");
 
-$query = "select product_ID, product_name, product_price from product ;";
+$query = "select * product_ID, product_name, product_price from product ;";
 $result = pg_query($con, $query);
 $resultCheck = pg_num_rows($result);
 ?>
