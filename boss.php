@@ -6,7 +6,7 @@
   $password = "f212022ea21f05418f65b67a5e34e09742a957252985b3fbca8d0e90cd829840"; 
   $connection_string = "host={$host} port={$port} dbname={$dbname} user={$user} password={$password} ";
   $dbconn = pg_connect($connection_string);
-  $query = "select * product_ID, product_name, product_price from product ;";
+  $query = "select product_ID, product_name, product_amount, product_price from product ;";
   $result = pg_query($dbconn,$query);
 ?>
 
@@ -36,6 +36,7 @@
           <tr>
             <th>ID</th>
             <th>Product</th>
+            <th>Amount</th>
             <th>Price</th>
           </tr>
         </thead>
@@ -48,6 +49,7 @@
               <tr>
                 <td><?php echo $row['product_ID']; ?></td>
                 <td><?php echo $row['product_name']; ?></td>
+                <td><?php echo $row['product_amount']; ?></td>
                 <td><?php echo $row['product_price,']; ?></td>
               </tr>
           <?php
