@@ -1,14 +1,14 @@
 <?php
-$con = pg_connect("host=ec2-35-171-57-132.compute-1.amazonaws.com
-dbname=d7sp2j6pm2qi2a
-port=5432
-user=uhccoenqxgimrq
-password=f212022ea21f05418f65b67a5e34e09742a957252985b3fbca8d0e90cd829840
-sslmode=require");
-
-$query = "select product_ID, product_name, product_price from product ;";
-$result = pg_query($con, $query);
-$resultCheck = pg_num_rows($result);
+  $host = "ec2-35-171-57-132.compute-1.amazonaws.com";
+  $port = "5432";
+  $dbname = "d7sp2j6pm2qi2a";
+  $user = "uhccoenqxgimrq";
+  $password = "f212022ea21f05418f65b67a5e34e09742a957252985b3fbca8d0e90cd829840"; 
+  $connection_string = "host={$host} port={$port} dbname={$dbname} user={$user} password={$password} ";
+  $dbconn = pg_connect($connection_string);
+  $query = "select * product_ID, product_name, product_price from product ;";
+  $result = pg_query($dbconn,$query);
+  $resultCheck = pg_num_rows($result);
 ?>
 
 <!DOCTYPE html>
@@ -28,13 +28,13 @@ $resultCheck = pg_num_rows($result);
 
 <body id="bd-view-page">
   <div class="form-title">
-    <h1 style="font-weight: 700;">ATN BOSS - VIEW SHOP DATA </h1>
+    <h1 style="font-weight: 700;">ATN BOSS</h1>
   </div>
   <div class="container">
     <div class="col" style="padding-top:50px;">
         <thead>
           <tr>
-            <th>#</th>
+            <th>ID</th>
             <th>Product</th>
             <th>Price</th>
           </tr>
