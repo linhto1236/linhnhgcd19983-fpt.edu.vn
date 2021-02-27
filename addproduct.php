@@ -15,8 +15,8 @@
       $product_price = $_POST['price'];
 
     }
-    $query = "INSERT INTO Product (Product_ID, Product_name, Product_amount, Product_price) 
-    VALUES('$Product_id', '$Product_name', '$Product_amount', '$Product_price');";
+    $query = "INSERT INTO Product (product_id, product_name, product_amount, product_price) 
+    VALUES('$product_id', '$product_name', '$product_amount', '$product_price');";
     $result = pg_query($connect, $query);
     if ($result) {
       echo "<script>alert('Record added succesfully!, Refresh');</script>";
