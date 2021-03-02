@@ -10,7 +10,7 @@ if ($connect === false) {
     } else {
       $id = $_POST['id'];
     }
-    $query = "DELETE FROM product WHERE id = '$id';";
+    $query = "DELETE FROM product WHERE product_id = '$id';";
     $result = pg_query($connect, $query);
     if ($result) {
       echo "<script>alert('Record delete succesfully!, Refresh');</script>";
