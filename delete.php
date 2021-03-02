@@ -12,7 +12,6 @@ if ($connect === false) {
     }
     $query = "DELETE FROM product WHERE id = '$id';";
     $result = pg_query($connect, $query);
-echo("hello");
     if ($result) {
       echo "<script>alert('Record delete succesfully!, Refresh');</script>";
       header("location:staff.html");
